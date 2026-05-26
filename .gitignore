@@ -1,0 +1,4 @@
+.DS_Store
+data/mcp_state.json
+data/mcp_commands.json
+assets/cache/
