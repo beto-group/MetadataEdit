@@ -1,3 +1,4 @@
+
 ```datacorejsx
 const activeFile = dc.resolvePath("METADATA EDIT") || "_RESOURCES/DATACORE/_DONE/MetadataEdit/METADATA EDIT";
 const folderPath = activeFile.substring(0, activeFile.lastIndexOf('/'));
