@@ -36,10 +36,10 @@ function BulkOperations({
           className="datacore-select" 
           value={bulkEditKey} 
           onChange={e => { setBulkEditKey(e.target.value); setBulkEditValue(''); }}
-          style={{ color: '#ffffff', backgroundColor: '#1a1a1a', padding: '8px', minHeight: '36px' }}
+          style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)', padding: '8px', minHeight: '36px' }}
         >
-          <option value="" style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>Bulk Edit a Property...</option>
-          {allUniqueKeys.map(key => <option key={key} value={key} style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>{key}</option>)}
+          <option value="" style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>Bulk Edit a Property...</option>
+          {allUniqueKeys.map(key => <option key={key} value={key} style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>{key}</option>)}
         </select>
         {bulkEditKey && (
           <>
@@ -123,9 +123,9 @@ function BulkOperations({
               value={bulkAddType} 
               onChange={e => { setBulkAddType(e.target.value); setBulkAddValue(''); setBulkAddList([]); }} 
               className="datacore-select"
-              style={{ color: '#ffffff', backgroundColor: '#1a1a1a', padding: '8px', minHeight: '36px' }}
+              style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)', padding: '8px', minHeight: '36px' }}
             >
-              {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>{config.display}</option>)}
+              {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>{config.display}</option>)}
             </select>
             {bulkAddType === 'list' ? (
               <>
@@ -176,10 +176,10 @@ function BulkOperations({
               className="datacore-select" 
               value={bulkEditKey} 
               onChange={e => setBulkEditKey(e.target.value)}
-              style={{ color: '#ffffff', backgroundColor: '#1a1a1a', padding: '8px', minHeight: '36px' }}
+              style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)', padding: '8px', minHeight: '36px' }}
             >
-              <option value="" style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>Select property to delete...</option>
-              {allUniqueKeys.map(key => <option key={key} value={key} style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>{key}</option>)}
+              <option value="" style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>Select property to delete...</option>
+              {allUniqueKeys.map(key => <option key={key} value={key} style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>{key}</option>)}
             </select>
             <div className="datacore-modal-actions">
               <button onClick={() => setBulkMode(null)} className="datacore-button-secondary">Cancel</button>

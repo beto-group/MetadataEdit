@@ -344,7 +344,7 @@ function App(props) {
       height: "100%",
       zIndex: "9998",
       overflow: "hidden",
-      backgroundColor: "#000000",
+      backgroundColor: "var(--background-primary)",
     });
 
     return () => {
@@ -394,11 +394,11 @@ function App(props) {
         alignItems: "center",
         justifyContent: "center",
         gap: "12px",
-        border: "1px dashed #333",
+        border: "1px dashed var(--background-modifier-border)",
         borderRadius: "8px",
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "var(--background-secondary)",
       }}>
-        <p style={{ margin: 0, color: "#888", fontSize: "14px" }}>
+        <p style={{ margin: 0, color: "var(--text-muted)", fontSize: "14px" }}>
           Metadata Editor is in compact mode.
         </p>
         <button
@@ -406,8 +406,8 @@ function App(props) {
             padding: "8px 16px",
             fontSize: "12px",
             fontWeight: "500",
-            color: "#ffffff",
-            backgroundColor: "#8b5cf6",
+            color: "var(--text-on-accent)",
+            backgroundColor: "var(--interactive-accent)",
             border: "none",
             borderRadius: "6px",
             cursor: "pointer",
@@ -427,11 +427,15 @@ function App(props) {
           opacity: 0.6;
           transition: opacity 0.2s ease-in-out;
         }
+        .${uniqueWrapperClass} .metadata-exit-icon {
+          opacity: 0.6;
+          transition: opacity 0.2s ease-in-out;
+        }
         .${uniqueWrapperClass} .metadata-exit-icon:hover {
           opacity: 1;
         }
-        .datacore-container { display: flex; flex-direction: column; gap: 16px; height: 100%; width: 100%; padding: 24px; background-color: #000000; box-sizing: border-box; overflow-y: auto; }
-        .datacore-panel { background-color: #0a0a0a; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; min-height: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); border: 1px solid #1a1a1a; }
+        .datacore-container { display: flex; flex-direction: column; gap: 16px; height: 100%; width: 100%; padding: 24px; background-color: var(--background-primary); box-sizing: border-box; overflow-y: auto; }
+        .datacore-panel { background-color: var(--background-secondary); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; min-height: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.5); border: 1px solid var(--background-modifier-border); }
         .datacore-file-panel { min-height: 150px; flex-shrink: 0; gap: 10px; }
         .datacore-editor-panel { flex-grow: 1; position: relative; gap: 12px; }
         .datacore-file-list { flex: 1; overflow-y: auto; margin-bottom: 10px; }
@@ -439,15 +443,15 @@ function App(props) {
           width: 100%; 
           padding: 10px 12px; 
           box-sizing: border-box; 
-          background-color: #1a1a1a; 
-          border: 1px solid #333; 
+          background-color: var(--background-modifier-form-field); 
+          border: 1px solid var(--background-modifier-border); 
           border-radius: 10px; 
-          color: #ffffff !important; 
+          color: var(--text-normal) !important; 
           font-family: inherit; 
           font-size: 14px; 
           transition: border 120ms ease, box-shadow 120ms ease; 
         }
-        .datacore-input::placeholder { color: #666; }
+        .datacore-input::placeholder { color: var(--text-muted); }
         .datacore-select { 
           appearance: none; 
           -webkit-appearance: none;
@@ -457,68 +461,68 @@ function App(props) {
           background-position: right 12px center;
           padding-right: 36px;
           cursor: pointer;
-          color: #ffffff !important;
+          color: var(--text-normal) !important;
         }
         .datacore-select:disabled { opacity: 0.5; cursor: not-allowed; }
-        .datacore-select option { background-color: #1a1a1a !important; color: #ffffff !important; padding: 10px 12px; font-size: 14px; }
-        .datacore-input:focus, .datacore-select:focus { outline: none; border-color: #8b5cf6; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25); }
-        .datacore-input.is-valid { border-left: 3px solid #10b981; }
-        .datacore-input.is-invalid { border-left: 3px solid #ef4444; }
+        .datacore-select option { background-color: var(--background-modifier-form-field) !important; color: var(--text-normal) !important; padding: 10px 12px; font-size: 14px; }
+        .datacore-input:focus, .datacore-select:focus { outline: none; border-color: var(--interactive-accent); box-shadow: 0 0 0 3px var(--background-modifier-border-focus); }
+        .datacore-input.is-valid { border-left: 3px solid var(--text-success); }
+        .datacore-input.is-invalid { border-left: 3px solid var(--text-error); }
         .datacore-path-input-group { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-        .datacore-remove-button { background-color: #ef4444; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; }
-        .datacore-add-path-button { background: linear-gradient(180deg, #8b5cf6, #7c3aed); color: #ffffff; border: none; padding: 12px; width: 100%; margin-top: 5px; border-radius: 10px; cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: center; }
-        .datacore-add-path-button:hover { background: linear-gradient(180deg, #7c3aed, #6d28d9); }
+        .datacore-remove-button { background-color: var(--text-error); color: var(--text-on-accent); border: none; border-radius: 50%; width: 26px; height: 26px; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; }
+        .datacore-add-path-button { background: var(--interactive-accent); color: var(--text-on-accent); border: none; padding: 12px; width: 100%; margin-top: 5px; border-radius: 10px; cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+        .datacore-add-path-button:hover { filter: brightness(1.15); }
         .datacore-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
         .datacore-bulk-edit-group { display: flex; align-items: flex-start; gap: 10px; flex-grow: 1; min-width: 320px; }
         .datacore-bulk-actions { display: flex; gap: 8px; }
-        .datacore-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid #333; gap: 6px; padding-bottom: 6px; }
-        .datacore-tab { background: #1a1a1a; border: 1px solid #333; padding: 8px 12px; cursor: pointer; color: #888; border-radius: 999px; transition: all 0.2s ease; }
-        .datacore-tab:hover { color: #ffffff; border-color: #8b5cf6; }
-        .datacore-tab.is-active { color: #ffffff; font-weight: 700; border-color: #8b5cf6; background: rgba(139, 92, 246, 0.15); }
-        .datacore-table-container { flex: 1; overflow-y: auto; border: 1px solid #333; border-radius: 10px; margin-top: 8px; background-color: #0a0a0a; }
+        .datacore-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--background-modifier-border); gap: 6px; padding-bottom: 6px; }
+        .datacore-tab { background: var(--background-modifier-form-field); border: 1px solid var(--background-modifier-border); padding: 8px 12px; cursor: pointer; color: var(--text-muted); border-radius: 999px; transition: all 0.2s ease; }
+        .datacore-tab:hover { color: var(--text-normal); border-color: var(--interactive-accent); }
+        .datacore-tab.is-active { color: var(--text-normal); font-weight: 700; border-color: var(--interactive-accent); background: var(--background-modifier-hover); }
+        .datacore-table-container { flex: 1; overflow-y: auto; border: 1px solid var(--background-modifier-border); border-radius: 10px; margin-top: 8px; background-color: var(--background-secondary); }
         .datacore-table { width: 100%; border-collapse: collapse; }
-        .datacore-table th, .datacore-table td { padding: 12px; border-bottom: 1px solid #1a1a1a; text-align: left; vertical-align: middle; color: #ffffff; }
-        .datacore-table th { background-color: #000000; font-weight: 700; color: #888; position: sticky; top: 0; z-index: 1; }
-        .datacore-table tr:hover { background-color: #0f0f0f; }
+        .datacore-table th, .datacore-table td { padding: 12px; border-bottom: 1px solid var(--background-modifier-border); text-align: left; vertical-align: middle; color: var(--text-normal); }
+        .datacore-table th { background-color: var(--background-primary); font-weight: 700; color: var(--text-muted); position: sticky; top: 0; z-index: 1; }
+        .datacore-table tr:hover { background-color: var(--background-modifier-hover); }
         .datacore-table tr:last-child td { border-bottom: none; }
-        .datacore-table code { background-color: #1a1a1a; padding: 4px 8px; border-radius: 6px; color: #8b5cf6; }
-        .datacore-checkbox { transform: scale(1.2); cursor: pointer; accent-color: #8b5cf6; }
-        .datacore-button, .datacore-icon-button { padding: 10px 16px; background-color: #8b5cf6; color: #ffffff; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: filter 120ms ease, transform 60ms ease; display: inline-flex; align-items: center; justify-content: center; }
+        .datacore-table code { background-color: var(--background-modifier-form-field); padding: 4px 8px; border-radius: 6px; color: var(--interactive-accent); }
+        .datacore-checkbox { transform: scale(1.2); cursor: pointer; accent-color: var(--interactive-accent); }
+        .datacore-button, .datacore-icon-button { padding: 10px 16px; background-color: var(--interactive-accent); color: var(--text-on-accent); border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: filter 120ms ease, transform 60ms ease; display: inline-flex; align-items: center; justify-content: center; }
         .datacore-button:hover { filter: brightness(1.15); }
         .datacore-button:active { transform: translateY(1px); }
-        .datacore-button-danger { background-color: #ef4444; color: white; }
+        .datacore-button-danger { background-color: var(--text-error); color: var(--text-on-accent); }
         .datacore-button-danger:hover { filter: brightness(1.15); }
-        .datacore-button-secondary { background-color: #333; color: #ffffff; }
-        .datacore-button-secondary:hover { background-color: #444; }
-        .datacore-icon-button { background: none; color: #888; font-size: 18px; padding: 4px; border-radius: 8px; }
-        .datacore-icon-button:hover { color: #ef4444; background: #1a1a1a; }
-        .datacore-empty-state { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; color: #666; gap: 6px; min-height: 200px; }
-        .datacore-status-bar { flex-shrink: 0; border-top: 1px solid #333; padding-top: 12px; font-size: 13px; color: #888; }
-        .status-success { color: #10b981; } .status-error { color: #ef4444; }
-        .datacore-modal-backdrop { position: fixed; inset: 0; background-color: rgba(0,0,0,0.8); z-index: 100; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(4px); padding: 16px; }
-        .datacore-modal { background-color: #0a0a0a; padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; border: 1px solid #1a1a1a; }
-        .datacore-modal h3 { color: #ffffff; margin: 0 0 8px 0; }
+        .datacore-button-secondary { background-color: var(--background-modifier-form-field); color: var(--text-normal); }
+        .datacore-button-secondary:hover { background-color: var(--background-modifier-hover); }
+        .datacore-icon-button { background: none; color: var(--text-muted); font-size: 18px; padding: 4px; border-radius: 8px; }
+        .datacore-icon-button:hover { color: var(--text-error); background: var(--background-modifier-hover); }
+        .datacore-empty-state { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; color: var(--text-muted); gap: 6px; min-height: 200px; }
+        .datacore-status-bar { flex-shrink: 0; border-top: 1px solid var(--background-modifier-border); padding-top: 12px; font-size: 13px; color: var(--text-muted); }
+        .status-success { color: var(--text-success); } .status-error { color: var(--text-error); }
+        .datacore-modal-backdrop { position: fixed; inset: 0; background-color: var(--background-modifier-cover); z-index: 100; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(4px); padding: 16px; }
+        .datacore-modal { background-color: var(--background-secondary); padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px; border: 1px solid var(--background-modifier-border); }
+        .datacore-modal h3 { color: var(--text-normal); margin: 0 0 8px 0; }
         .datacore-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; }
-        .datacore-loading-overlay { position: absolute; inset: 0; background-color: rgba(0,0,0,0.8); z-index: 10; display: flex; justify-content: center; align-items: center; border-radius: 12px; }
-        .datacore-spinner { width: 44px; height: 44px; border: 4px solid #333; border-top-color: #8b5cf6; border-radius: 50%; animation: spin 1s linear infinite; }
+        .datacore-loading-overlay { position: absolute; inset: 0; background-color: var(--background-modifier-cover); z-index: 10; display: flex; justify-content: center; align-items: center; border-radius: 12px; }
+        .datacore-spinner { width: 44px; height: 44px; border: 4px solid var(--background-modifier-border); border-top-color: var(--interactive-accent); border-radius: 50%; animation: spin 1s linear infinite; }
         @keyframes spin { to { transform: rotate(360deg); } }
         .datacore-list-editor { display: flex; flex-direction: column; gap: 8px; }
         .datacore-list-items { display: flex; flex-direction: column; gap: 6px; max-height: 200px; overflow-y: auto; }
-        .datacore-list-item { display: flex; justify-content: space-between; align-items: center; background-color: #1a1a1a; padding: 8px 10px; border-radius: 8px; color: #ffffff; }
-        .datacore-empty-list-text { color: #666; font-style: italic; padding: 6px 10px; }
+        .datacore-list-item { display: flex; justify-content: space-between; align-items: center; background-color: var(--background-modifier-form-field); padding: 8px 10px; border-radius: 8px; color: var(--text-normal); }
+        .datacore-empty-list-text { color: var(--text-muted); font-style: italic; padding: 6px 10px; }
         .datacore-list-add { display: flex; gap: 8px; }
         .datacore-list-add .datacore-button { padding: 8px 12px; }
         .datacore-bulk-list-wrap { flex: 1; min-width: 320px; }
         .datacore-checkbox-row { display: flex; align-items: center; gap: 10px; }
-        .datacore-checkbox-label { color: #888; }
-        .datacore-add-single { margin-top: 12px; padding: 12px; border: 1px dashed #333; border-radius: 12px; background: #0a0a0a; }
-        .datacore-add-single h4 { color: #ffffff; margin: 0 0 12px 0; }
+        .datacore-checkbox-label { color: var(--text-muted); }
+        .datacore-add-single { margin-top: 12px; padding: 12px; border: 1px dashed var(--background-modifier-border); border-radius: 12px; background: var(--background-secondary); }
+        .datacore-add-single h4 { color: var(--text-normal); margin: 0 0 12px 0; }
         .datacore-add-grid { display: grid; grid-template-columns: 1.2fr 0.8fr 2fr auto; gap: 10px; align-items: start; }
         .datacore-add-list { grid-column: span 2; }
         .datacore-add-single-btn { white-space: nowrap; }
-        .datacore-segment { display: inline-flex; background: #1a1a1a; border: 1px solid #333; border-radius: 999px; overflow: hidden; margin-bottom: 8px; }
-        .datacore-segment .seg { padding: 6px 10px; cursor: pointer; color: #888; }
-        .datacore-segment .seg.active { background: rgba(139, 92, 246, 0.2); color: #ffffff; font-weight: 700; }
+        .datacore-segment { display: inline-flex; background: var(--background-modifier-form-field); border: 1px solid var(--background-modifier-border); border-radius: 999px; overflow: hidden; margin-bottom: 8px; }
+        .datacore-segment .seg { padding: 6px 10px; cursor: pointer; color: var(--text-muted); }
+        .datacore-segment .seg.active { background: var(--background-modifier-hover); color: var(--text-normal); font-weight: 700; }
       `}</style>
       <div className="datacore-container">
         {/* Close Mode button */}
@@ -531,7 +535,7 @@ function App(props) {
             right: "20px",
             fontFamily: "monospace",
             fontSize: "13px",
-            color: "#8b5cf6",
+            color: "var(--interactive-accent)",
             userSelect: "none",
             cursor: "pointer",
             zIndex: 100,
@@ -539,12 +543,12 @@ function App(props) {
             alignItems: "center",
             gap: "8px",
             padding: "8px 12px",
-            backgroundColor: "rgba(139, 92, 246, 0.1)",
-            border: "1px solid rgba(139, 92, 246, 0.2)",
+            backgroundColor: "var(--background-modifier-hover)",
+            border: "1px solid var(--background-modifier-border)",
             borderRadius: "6px"
           }}
         >
-          <dc.Icon icon="minimize-2" style={{ width: '16px', height: '16px', color: '#8b5cf6' }} />
+          <dc.Icon icon="minimize-2" style={{ width: '16px', height: '16px', color: 'var(--interactive-accent)' }} />
           <span>Exit Full Tab</span>
         </div>
 

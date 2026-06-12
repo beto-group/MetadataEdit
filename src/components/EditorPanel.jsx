@@ -184,9 +184,9 @@ function EditorPanel({
                           value={currentType} 
                           disabled 
                           className="datacore-select"
-                          style={{ color: '#ffffff', backgroundColor: '#1a1a1a', padding: '8px', minHeight: '36px' }}
+                          style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)', padding: '8px', minHeight: '36px' }}
                         >
-                          {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>{config.display}</option>)}
+                          {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>{config.display}</option>)}
                         </select>
                       </td>
                       <td>
@@ -219,8 +219,8 @@ function EditorPanel({
               <h4>Add Property to This File</h4>
               <div className="datacore-add-grid">
                 <input type="text" value={newPropKey} onChange={e => setNewPropKey(e.target.value)} placeholder="Property key" className="datacore-input" />
-                <select value={newPropType} onChange={e => { setNewPropType(e.target.value); setNewPropValue(''); setNewPropList([]); }} className="datacore-select" style={{ color: '#ffffff', backgroundColor: '#1a1a1a', padding: '8px', minHeight: '36px' }}>
-                  {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: '#ffffff', backgroundColor: '#1a1a1a' }}>{config.display}</option>)}
+                <select value={newPropType} onChange={e => { setNewPropType(e.target.value); setNewPropValue(''); setNewPropList([]); }} className="datacore-select" style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)', padding: '8px', minHeight: '36px' }}>
+                  {Object.entries(PROPERTY_TYPES_CONFIG).map(([id, config]) => <option key={id} value={id} style={{ color: 'var(--text-normal)', backgroundColor: 'var(--background-modifier-form-field)' }}>{config.display}</option>)}
                 </select>
                 {newPropType === 'list' ? (
                   <div className="datacore-add-list">

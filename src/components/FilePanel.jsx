@@ -1,8 +1,8 @@
 function FilePanel({ dc, fileInputs, handlePathChange, removeFileInput, addFileInput }) {
   return (
     <div className="datacore-panel datacore-file-panel">
-      <h3 style={{ margin: "0 0 12px 0", color: "#ffffff", display: "flex", alignItems: "center", gap: "8px" }}>
-        <dc.Icon icon="files" style={{ color: "#8b5cf6" }} />
+      <h3 style={{ margin: "0 0 12px 0", color: "var(--text-normal)", display: "flex", alignItems: "center", gap: "8px" }}>
+        <dc.Icon icon="files" style={{ color: "var(--interactive-accent)" }} />
         File Selection
       </h3>
       <div className="datacore-file-list">
