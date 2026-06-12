@@ -34,7 +34,7 @@ storage:
   - File
 network: Offline
 runtime: React
-entry_point: MetadataEdit.md
+entry_point: METADATA EDIT.md
 logic: src/index.jsx
 ---
 

@@ -8,7 +8,7 @@ The module utilizes a split-file structure to guarantee legibility, testability,
 
 ```text
 MetadataEdit/
-├── MetadataEdit.md        # Obsidian entry point
+├── METADATA EDIT.md       # Obsidian entry point
 ├── METADATA.md            # Component manifest
 ├── README.md              # Documentation
 ├── CONTRIBUTION.md        # This file

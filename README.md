@@ -1,3 +1,4 @@
+
 <div align="center">
   <a name="readme-top"></a>
   <img src="https://raw.githubusercontent.com/beto-group/beto.assets/main/BETO.logo.animated.svg?raw=true" alt="LOGO" width="160">
@@ -31,7 +32,7 @@ The Metadata Edit component provides an IDE-like workspace environment for manag
 To start using MetadataEdit today:
 1. **Download the Repository**: Clone or download this repository directly into any folder inside your Obsidian vault.
 2. **Install Datacore**: Ensure you have the **Datacore** plugin installed and enabled in Obsidian.
-3. **Open the Entry Note**: Open the **`MetadataEdit.md`** note inside Obsidian to launch the component!
+3. **Open the Entry Note**: Open the **`METADATA EDIT.md`** note inside Obsidian to launch the component!
 
 ---
 
@@ -54,7 +55,7 @@ The package exposes the following compiled files:
 
 | File | Description |
 | :--- | :--- |
-| **[MetadataEdit.md](MetadataEdit.md)** | Main entry point note designed to load in the Obsidian workspace leaf. |
+| **[METADATA EDIT.md](METADATA EDIT.md)** | Main entry point note designed to load in the Obsidian workspace leaf. |
 | **[src/index.jsx](src/index.jsx)** | Main entry bootstrapper coordinating code modification auto-reloads. |
 | **[src/App.jsx](src/App.jsx)** | Coordinator component managing local properties and FullTab layouts. |
 | **[src/components/FilePanel.jsx](src/components/FilePanel.jsx)** | Left selection panel controlling note paths and validations. |
