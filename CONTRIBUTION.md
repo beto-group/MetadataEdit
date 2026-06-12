@@ -1,4 +1,4 @@
-# Contribution Guidelines — Metadata Edit
+# Contribution Guidelines - MetadataEdit
 
 Welcome! This component is part of the BetoOS Datacore library. Please adhere to the following architectural standards.
 
@@ -7,8 +7,8 @@ Welcome! This component is part of the BetoOS Datacore library. Please adhere to
 The module utilizes a split-file structure to guarantee legibility, testability, and isolated execution scopes:
 
 ```text
-METADATA EDIT/
-├── METADATA EDIT.md       # Obsidian entry point
+MetadataEdit/
+├── MetadataEdit.md        # Obsidian entry point
 ├── METADATA.md            # Component manifest
 ├── README.md              # Documentation
 ├── CONTRIBUTION.md        # This file
@@ -19,10 +19,12 @@ METADATA EDIT/
 │   ├── mcp_state.json     # Live editor status
 │   └── mcp_commands.json  # External watch/reload trigger
 ├── assets/
-│   ├── metadata_edit.webp # Static preview image
-│   └── metadataedit.clip.gif # Immersive preview clip
+│   ├── image/
+│   │   └── preview.webp   # Static preview image
+│   └── videos/
+│       └── preview.gif    # Immersive preview clip
 └── src/
-    ├── index.jsx          # Event-driven code watch & reload daemon
+    ├── index.jsx          # Event-driven code watch and reload daemon
     ├── App.jsx            # Main layout and coordinator
     ├── components/
     │   ├── FilePanel.jsx  # File selection controllers
@@ -35,9 +37,9 @@ METADATA EDIT/
 
 ## Developer Standards
 
-1. **Strict Zero standard emojis**: All UI elements, buttons, headers, and control indicators must use Lucide vector icons (`<dc.Icon>`) or plain text. Emojis are reserved strictly for documentation.
-2. **Path safety**: Do not hardcode absolute path strings (e.g. `/Volumes/` or `file:///`). Always resolve vault directories via the `dc.resolvePath` wrapper.
-3. **No-Polling Code Watcher**: The index bootstrapper registers an event listener with `app.vault.on("modify")` targeting files under `METADATA EDIT/src/`. This triggers an instant reload of the component's React view when source code modifications are saved, bypassing background CPU polling entirely.
+1. **Strict No Emojis Policy**: Emojis are never allowed in the component user interface or any documentation files (including README.md, CONTRIBUTION.md, etc.). Use Lucide vector icons or clean plain text instead.
+2. **Path safety**: Do not hardcode absolute path strings (such as /Volumes/ or /Users/). Use relative paths or folder path properties passed from the loader.
+3. **No-Polling Code Watcher**: The index bootstrapper registers an event listener with `app.vault.on("modify")` targeting files under `MetadataEdit/src/`. This triggers an instant reload of the component's React view when source code modifications are saved, bypassing background CPU polling entirely.
 4. **MCP Command System**: To force a code reload remotely via MCP agents, write the following payload to `data/mcp_commands.json`:
    ```json
    {"action":"reload","executed":false}

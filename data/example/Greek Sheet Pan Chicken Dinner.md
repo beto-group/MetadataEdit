@@ -8,15 +8,15 @@ tags:
   - meal-ideas-4
 genre:
   - poulet
-keywords: 
+keywords:
 source: Sophie
 link:
   - https://downshiftology.com/recipes/greek-sheet-pan-chicken/
-desc: 
+desc:
 rating: Très bon et beau
 time: 1 hr
 servings: "6"
-calories: 
+calories: "10000"
 ingredients:
   - olive oil
   - lemon
@@ -39,7 +39,7 @@ to-keep: pass
 cover: image_527.png
 aliases:
   - cookbook/greek.sheet.chicken
-tested: 
+tested:
 ---
 
 # Greek Sheet Pan Chicken Dinner

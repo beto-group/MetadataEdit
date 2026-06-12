@@ -1,8 +1,4 @@
-const { findNearestAncestorWithClass, findDirectChildByClass } = await dc.require(dc.resolvePath("METADATA EDIT/src/utils/domUtils.js"));
-const { FilePanel } = await dc.require(dc.resolvePath("METADATA EDIT/src/components/FilePanel.jsx"));
-const { EditorPanel, inferTypeFromValue, convertValueToType, PROPERTY_TYPES_CONFIG } = await dc.require(dc.resolvePath("METADATA EDIT/src/components/EditorPanel.jsx"));
-const { BulkOperations } = await dc.require(dc.resolvePath("METADATA EDIT/src/components/BulkOperations.jsx"));
-const { MCPBridge } = await dc.require(dc.resolvePath("METADATA EDIT/src/components/MCPBridge.jsx"));
+// Dependencies are passed dynamically through index.jsx
 
 async function mutateProperty(obsidianApp, files, key, value, action = 'update') {
   const promises = files.map(file => {
@@ -103,7 +99,10 @@ function getUnionListForKey(obsidianApp, files, key) {
 }
 
 function App(props) {
-  const { dc } = props;
+  const { dc, folderPath, dependencies } = props;
+  const { findNearestAncestorWithClass, findDirectChildByClass } = dependencies.domUtils;
+  const { FilePanel, BulkOperations, MCPBridge } = dependencies;
+  const { EditorPanel, inferTypeFromValue, convertValueToType, PROPERTY_TYPES_CONFIG, ListEditorCell } = dependencies.EditorPanelMod;
   const { useState, useEffect, useMemo, useRef } = dc;
 
   let obsidianApp = dc.app || app;
@@ -117,11 +116,7 @@ function App(props) {
   const stateRefs = useRef({}).current;
 
   // Resolve component paths
-  const componentDir = useMemo(() => {
-    const currentPath = dc.resolvePath("METADATA EDIT/src/App.jsx");
-    if (!currentPath) return "";
-    return currentPath.substring(0, currentPath.indexOf("/src/App.jsx"));
-  }, []);
+  const componentDir = folderPath;
 
   const exampleFilePath = useMemo(() => {
     if (!componentDir) return "";
@@ -568,6 +563,8 @@ function App(props) {
           
           <BulkOperations
             dc={dc}
+            ListEditorCell={ListEditorCell}
+            PROPERTY_TYPES_CONFIG={PROPERTY_TYPES_CONFIG}
             validFiles={validFiles}
             allUniqueKeys={allUniqueKeys}
             propertyTypes={propertyTypes}

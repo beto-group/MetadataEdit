@@ -1,7 +1,7 @@
-const { ListEditorCell, PROPERTY_TYPES_CONFIG } = await dc.require(dc.resolvePath("METADATA EDIT/src/components/EditorPanel.jsx"));
-
 function BulkOperations({
   dc,
+  ListEditorCell,
+  PROPERTY_TYPES_CONFIG,
   validFiles,
   allUniqueKeys,
   bulkMode,

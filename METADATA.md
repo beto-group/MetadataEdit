@@ -3,8 +3,8 @@ author: beto.group
 contributor: []
 version: 1.0.1
 id: metadata-edit-495
-name: METADATA EDIT
-description: A comprehensive multi-file frontmatter editor designed for powerful bulk operations and precise, type-aware property management.
+name: MetadataEdit
+description: A comprehensive multi-file frontmatter editor designed for bulk operations and precise, type-aware property management.
 status: stable
 complexity: plug-n-play
 category:
@@ -23,8 +23,8 @@ repository:
   - https://github.com/beto-group/MetadataEdit
 missing: []
 resources:
-  - assets/metadata_edit.webp
-  - assets/metadataedit.clip.gif
+  - assets/image/preview.webp
+  - assets/videos/preview.gif
 type: DatacoreComponent
 target: Datacore
 security:
@@ -34,7 +34,7 @@ storage:
   - File
 network: Offline
 runtime: React
-entry_point: METADATA EDIT.md
+entry_point: MetadataEdit.md
 logic: src/index.jsx
 ---
 
