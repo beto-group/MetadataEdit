@@ -7,14 +7,14 @@
 
 <div align="center">
   <!-- TOP PURPLE LINKS -->
-  <a href="https://beto.group"><img src="https://img.shields.io/badge/WEBSITE-7A46F1?style=for-the-badge&logo=data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22white%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3Cpath d%3D%22M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6%22%2F%3E%3Cpolyline points%3D%2215 3 21 3 21 9%22%2F%3E%3Cline x1%3D%2210%22 x2%3D%2221%22 y1%3D%2214%22 y2%3D%223%22%2F%3E%3C%2Fsvg%3E" alt="WEBSITE"></a>
+  <a href="https://beto.group"><img src="https://img.shields.io/badge/WEBSITE-7A46F1?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9Imx1Y2lkZSBsdWNpZGUtZXh0ZXJuYWwtbGluayI%2BPHBhdGggZD0iTTE4IDEzdjZhMiAyIDAgMCAxLTIgMkg1YTIgMiAwIDAgMS0yLTJWOGEyIDIgMCAwIDEgMi0yaDYiLz48cG9seWxpbmUgcG9pbnRzPSIxNSAzIDIxIDMgMjEgOSIvPjxsaW5lIHgxPSIxMCIgeDI9IjIxIiB5MT0iMTQiIHkyPSIzIi8%2BPC9zdmc%2B" alt="WEBSITE"></a>
   <a href="https://discord.com/invite/6rDp4q4Y2B"><img src="https://img.shields.io/badge/DISCORD-7A46F1?style=for-the-badge&logo=discord&logoColor=white" alt="JOIN OUR DISCORD"></a>
   <a href="https://github.com/sponsors/beto-group"><img src="https://img.shields.io/badge/Sponsor-7A46F1?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="SUPPORT US ON GITHUB"></a>
   <br/>
   <!-- BOTTOM GOLD TAXONOMY -->
-  <img src="https://img.shields.io/badge/TARGET-DATACORE-000?style=for-the-badge&logo=data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22%2523FFE165%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3Cellipse cx%3D%2212%22 cy%3D%225%22 rx%3D%229%22 ry%3D%223%22%2F%3E%3Cpath d%3D%22M3 5v14a9 3 0 0 0 18 0V5%22%2F%3E%3Cpath d%3D%22M3 12a9 3 0 0 0 18 0%22%2F%3E%3C%2Fsvg%3E" alt="TARGET">
-  <img src="https://img.shields.io/badge/SECURITY-VAULT_FS-000?style=for-the-badge&logo=data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22%2523FFE165%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3Cpath d%3D%22M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z%22%2F%3E%3C%2Fsvg%3E" alt="SECURITY">
-  <img src="https://img.shields.io/badge/RUNTIME-REACT-000?style=for-the-badge&logo=data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22 fill%3D%22none%22 stroke%3D%22%2523FFE165%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-linejoin%3D%22round%22%3E%3Cpolyline points%3D%224 17 10 11 4 5%22%2F%3E%3Cline x1%3D%2212%22 x2%3D%2220%22 y1%3D%2219%22 y2%3D%2219%22%2F%3E%3C%2Fsvg%3E" alt="RUNTIME">
+  <img src="https://img.shields.io/badge/TARGET-DATACORE-000?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkUxNjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZWxsaXBzZSBjeD0iMTIiIGN5PSI1IiByeD0iOSIgcnk9IjMiLz48cGF0aCBkPSJNMyA1djE0YTkgMyAwIDAgMCAxOCAwVjUiLz48cGF0aCBkPSJNMyAxMmE5IDMgMCAwIDAgMTggMCIvPjwvc3ZnPg%3D%3D" alt="TARGET">
+  <img src="https://img.shields.io/badge/SECURITY-VAULT_FS-000?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkUxNjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjAgMTNjMCA1LTMuNSA3LjUtNy42NiA4Ljk1YTEgMSAwIDAgMS0uNjctLjAxQzcuNSAyMC41IDQgMTggNCAxM1Y2YTEgMSAwIDAgMSAxLTFjMiAwIDQuNS0xLjIgNi4yNC0yLjcyYTEuMTcgMS4xNyAwIDAgMSAxLjUyIDBDMTQuNTEgMy44MSAxNyA1IDE5IDVhMSAxIDAgMCAxIDEgMXoiLz48L3N2Zz4%3D" alt="SECURITY">
+  <img src="https://img.shields.io/badge/RUNTIME-REACT-000?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkUxNjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSI0IDE3IDEwIDExIDQgNSIvPjxsaW5lIHgxPSIxMiIgeDI9IjIwIiB5MT0iMTkiIHkyPSIxOSIvPjwvc3ZnPg%3D%3D" alt="RUNTIME">
   <hr>
 </div>
 
@@ -23,6 +23,17 @@
 <p align="center"><i>A comprehensive multi-file frontmatter editor inside Obsidian workspace leaves, featuring type-aware UI inputs and bulk editing operations (Bulk Add, Bulk Edit, Bulk Delete).</i></p>
 
 The Metadata Edit component provides an IDE-like workspace environment for managing markdown frontmatter properties. It allows developers to load multiple vault files, inspect their properties side-by-side using tabs, perform type-aware inline value edits (arrays, booleans, numbers, dates, times, strings), and execute bulk actions across all selected files.
+
+---
+
+## Quick Start
+
+To start using MetadataEdit today:
+1. **Download the Repository**: Clone or download this repository directly into any folder inside your Obsidian vault.
+2. **Install Datacore**: Ensure you have the **Datacore** plugin installed and enabled in Obsidian.
+3. **Open the Entry Note**: Open the **`MetadataEdit.md`** note inside Obsidian to launch the component!
+
+---
 
 ## Features
 
@@ -34,6 +45,8 @@ The Metadata Edit component provides an IDE-like workspace environment for manag
   - **Bulk Add**: Append a new key-value property configuration across all loaded files.
   - **Bulk Delete**: Strip an unwanted metadata attribute from all files with one-click confirmation.
 - **MCP Sync Bridge**: Continually synchronizes editor states with `data/mcp_state.json` and listens to forced reload signals in `data/mcp_commands.json`.
+
+---
 
 ## Directory Index and Components
 
@@ -53,6 +66,16 @@ The package exposes the following compiled files:
 | **[METADATA.md](METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
 | **[CONTRIBUTION.md](CONTRIBUTION.md)** | Contributor architecture standards and local compilation guidelines. |
 | **[LICENSE.md](LICENSE.md)** | MIT open-source license. |
+
+---
+
+## Previews
+
+|             Static View              |            Interactive Walkthrough            |
+| :----------------------------------: | :-------------------------------------------: |
+| ![Preview](assets/image/preview.webp) | ![Walkthrough GIF](assets/videos/preview.gif) |
+
+---
 
 ## Contributors
 - beto.group
